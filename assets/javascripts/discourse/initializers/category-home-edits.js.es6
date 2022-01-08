@@ -8,7 +8,8 @@ import getURL from "discourse-common/lib/get-url";
 export default {
   name: "category-home-edits",
   initialize(container) {
-    if (Discourse.SiteSettings.discourse_category_home_enabled) {
+    const siteSettings = container.lookup("site-settings:main");
+    if (siteSettings.discourse_category_home_enabled) {
       ajax("/categoryhome/home_category", {
         type: "GET",
       })
