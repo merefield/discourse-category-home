@@ -1,5 +1,6 @@
-site_settings:
-  discourse_category_home_enabled: "Enable the Category Home plugin"
-category_home:
-  errors:
-    anon_user: "Error: user is anonymous."
+en:
+  site_settings:
+    discourse_category_home_enabled: "Enable the Category Home plugin"
+  category_home:
+    errors:
+      anon_user: "Error: user is anonymous."
